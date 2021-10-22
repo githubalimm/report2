@@ -17,11 +17,13 @@ namespace titan
         [Given(@"Login to Titan Url And enter user name and password")]
         public void GivenLoginToTitanUrlAndEnterUserNameAndPassword()
         {
-             driver = new ChromeDriver();
+            Thread.Sleep(8000);
+            driver = new ChromeDriver();
             driver.Url = "https://titanreleasetest.regus.com/aspx/main/adminhome.aspx";
             Thread.Sleep(8000);
             IWebElement search = driver.FindElement(By.XPath("//*[@id='i0116']"));
             search.SendKeys("Q.A@iwgplc.com");
+           
 
 
 
