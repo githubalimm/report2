@@ -17,7 +17,7 @@ namespace titan
         [Given(@"Login to Titan Url And enter user name and password")]
         public void GivenLoginToTitanUrlAndEnterUserNameAndPassword()
         {
-            Thread.Sleep(8000);
+            
             driver = new ChromeDriver();
             driver.Url = "https://titanreleasetest.regus.com/aspx/main/adminhome.aspx";
             Thread.Sleep(8000);
